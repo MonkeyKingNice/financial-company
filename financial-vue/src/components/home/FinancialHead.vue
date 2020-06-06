@@ -1,21 +1,21 @@
 <template>
   <div>
-    <div class="head-log">
-      <img :src="headLogImg">
-    </div>
-    <div class="head-slogan">
-      <p>与逐梦者同行，一站式企业服务</p>
-    </div>
-    <div class="head-nav">
-      <ul>
-        <li>佰税通</li>
-        <li>网站首页</li>
-        <li>一站式服务</li>
-        <li>公司理念</li>
-        <li>关于我们</li>
-        <li>联系我们</li>
-      </ul>
-    </div>
+    <nav class="financia-nav">
+      <div class="head-log">
+        <img :src="headLogImg" />
+      </div>
+      <div class="head-slogan">
+        <p>与逐梦者同行，一站式企业服务</p>
+      </div>
+      <div class="nav-head">
+        <li><big><b>佰税通</b></big></li>
+        <li><b>网站首页</b></li>
+        <li><b>一站式服务</b></li>
+        <li><b>公司理念</b></li>
+        <li><b>关于我们</b></li>
+        <li><b>联系我们</b></li>
+      </div>
+    </nav>
   </div>
 </template>
 
@@ -27,9 +27,7 @@ export default {
       headLogImg: '../../../../static/head_logo_imgs/logo.png'
     }
   },
-  created () {
-
-  },
+  created () { },
 
   computed: {},
 
@@ -38,18 +36,27 @@ export default {
 </script>
 
 <style>
-.head-log{float: left;}
-.head-slogan{float: left;}
-.head-nav{
-
+.financia-nav {
+  /* display: inline-block; */
 }
-  ul{
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    }
-  li{
-    float:left;
-    width:120px;
-  }
+.head-log {
+  float: left;
+}
+.head-slogan {
+  float: left;
+}
+
+.nav-head li {
+  display: inline-block;
+  width: 120px;
+  height: 51px;
+  text-align: center;
+  line-height: 51px;
+}
+.nav-head li:hover {
+  color: white;
+  background-color: #11278a;
+  cursor: pointer;
+  font-weight: bold;
+}
 </style>
