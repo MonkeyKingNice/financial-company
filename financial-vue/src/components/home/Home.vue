@@ -1,16 +1,21 @@
 <template>
   <div>
-      欢迎来到众所周知！
+      <FinancialHead></FinancialHead>
+      <HomePage></HomePage>
+      <OneStopService></OneStopService>
+      <CompanyPhilosophy></CompanyPhilosophy>
+      <AboutUs></AboutUs>
+      <ContactUs></ContactUs>
   </div>
 </template>
 
 <script>
-import FinancialHead from '@/components/FinancialHead'
-import HomePage from '@/components/HomePage'
-import OneStopService from '@/components/OneStopService'
-import CompanyPhilosophy from '@/components/CompanyPhilosophy'
-import AboutUs from '@/components/AboutUs'
-import ContactUs from '@/components/ContactUs'
+import FinancialHead from './FinancialHead'
+import HomePage from './HomePage'
+import OneStopService from './OneStopService'
+import CompanyPhilosophy from './CompanyPhilosophy'
+import AboutUs from './AboutUs'
+import ContactUs from './ContactUs'
 
 export default {
   name: 'Home',
@@ -20,12 +25,12 @@ export default {
     }
   },
   components: {
-      FinancialHead,
-      HomePage,
-      OneStopService,
-      CompanyPhilosophy,
-      AboutUs,
-      ContactUs
+    FinancialHead,
+    HomePage,
+    OneStopService,
+    CompanyPhilosophy,
+    AboutUs,
+    ContactUs
   },
   created () {
 

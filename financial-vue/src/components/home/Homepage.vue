@@ -1,5 +1,7 @@
 <template>
-  <div>网站首页</div>
+  <div>
+    <img class="HomePageImg" :src="homePageImg">
+  </div>
 </template>
 
 <script>
@@ -7,12 +9,10 @@ export default {
   name: 'HomePage',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      homePageImg: '../../../../static/home_page_imgs/homePage.jpg'
     }
   },
-  components: {
 
-  },
   created () {
 
   },
@@ -22,3 +22,11 @@ export default {
   methods: {}
 }
 </script>
+<style>
+  .HomePageImg{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+</style>
