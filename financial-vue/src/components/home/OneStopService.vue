@@ -20,7 +20,7 @@ export default {
   name: 'OneStopService',
   data () {
     return {
-      serviceJsonData: {}
+      serviceJsonData: { name: 'zl' }
     }
   },
   components: {
@@ -39,16 +39,14 @@ export default {
 
   methods: {
     intitServiceJsonData () {
-      var data
       this.$http.get('../../../../static/service_json/ServiceJsonData.json')
-        .then(function (response) {
-          data = response
+        .then((response) => {
+          this.serviceJsonData = response.data
+          console.log(this.serviceJsonData)
         })
-        .catch(function (error) {
+        .catch((error) => {
           console.log(error)
         })
-      this.serviceJsonData = data
-      console.log(this.serviceJsonData)
     }
   }
 }
