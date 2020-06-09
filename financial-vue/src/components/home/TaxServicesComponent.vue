@@ -2,27 +2,27 @@
   <div>
     <a href="javascript:void(0)"
        title="">
-      <div class="imgs"><img src="img/i_img1.jpg"
+      <div class="imgs"><img :src="jsonData.serviceImgPath"
              alt="" />
         <div class="txts">
-          <h3 class="f24 h3">公司注册</h3>
+          <h3 class="f24 h3">{{jsonData.serviceName}}</h3>
         </div>
       </div>
     </a>
     <div class="dl">
       <dl>
-        <dd v-for="(item, index) in jsonData.sonService"
+        <dd v-for="(item) in jsonData.sonService"
             :key="item.sonServiceName">
-          {{index}}-{{item}}
-          <a href=""
+          <a :href="item.sonServiceLinkPath"
              target="_blank"
-             title="item.sonServiceName">
+             :title="item.sonServiceName">
             <p>{{item.sonServiceName}}</p>
           </a>
-          <!-- <a href="http://www.yingtaicaiwu.com/fuwu1.html"
+          <!-- <a v-if="(index + 1) < jsonData.sonService.length"
+             :href="jsonData.sonService[index + 1].sonServiceLinkPath"
              target="_blank"
-             title="外资公司">
-            <p>外资公司</p>
+             :title="jsonData.sonService[index+1].sonServiceName">
+            <p>{{jsonData.sonService[index+1].sonServiceName}}</p>
           </a> -->
         </dd>
       </dl>
@@ -36,7 +36,7 @@ export default {
   name: 'TaxServicesComponent',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      sonServiceCount: this.jsonData.sonService
     }
   },
   props: {
@@ -46,14 +46,18 @@ export default {
 
   },
   created () {
-
+    // console.log(this.sonServiceCount)
   },
 
   computed: {
 
   },
 
-  methods: {}
+  methods: {
+    initSonServiceCount () {
+      this.sonServiceCount = this.jsonData.sonService.length
+    }
+  }
 }
 </script>
 <style>

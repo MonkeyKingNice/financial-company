@@ -8,7 +8,7 @@
         <p>与逐梦者同行，一站式企业服务</p>
       </div>
       <div class="nav-head">
-        <li><big><b>佰税通</b></big></li>
+        <!-- <li><big><b>佰税通</b></big></li> -->
         <li><b>网站首页</b></li>
         <li><b>一站式服务</b></li>
         <li><b>公司理念</b></li>
@@ -24,7 +24,7 @@ export default {
   name: 'FinancialHead',
   data () {
     return {
-      headLogImg: '../../../../static/head_logo_imgs/logo.png'
+      headLogImg: '../../../../static/images/head_logo_imgs/logo.png'
     }
   },
   created () { },

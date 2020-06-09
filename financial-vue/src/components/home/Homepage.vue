@@ -1,6 +1,7 @@
 <template>
   <div>
-    <img class="HomePageImg" :src="homePageImg">
+    <img class="HomePageImg"
+         :src="homePageImg">
   </div>
 </template>
 
@@ -9,7 +10,7 @@ export default {
   name: 'HomePage',
   data () {
     return {
-      homePageImg: '../../../../static/home_page_imgs/homePage.jpg'
+      homePageImg: '../../../../static/images/home_page_imgs/homePage.jpg'
     }
   },
 
@@ -23,10 +24,10 @@ export default {
 }
 </script>
 <style>
-  .HomePageImg{
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
+.HomePageImg {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
 </style>

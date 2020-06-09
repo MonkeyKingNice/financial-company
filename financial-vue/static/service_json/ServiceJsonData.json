@@ -1,8 +1,37 @@
 {
   "serviceName": "公司注册",
-  "serviceImgPath": "/dfdf",
+  "serviceImgPath": "/1",
   "sonService": [{
-    "sonServiceName": "深圳公司",
-    "sonServiceLinkPath": "/dfdf"
-  }]
+      "sonServiceName": "深圳公司",
+      "sonServiceLinkPath": "/2"
+    },
+    {
+      "sonServiceName": "外资公司",
+      "sonServiceLinkPath": "/3"
+    },
+    {
+      "sonServiceName": "股份公司",
+      "sonServiceLinkPath": "/4"
+    },
+    {
+      "sonServiceName": "集团公司",
+      "sonServiceLinkPath": "/5"
+    },
+    {
+      "sonServiceName": "香港公司",
+      "sonServiceLinkPath": "/6"
+    },
+    {
+      "sonServiceName": "分公司公司",
+      "sonServiceLinkPath": "/7"
+    },
+    {
+      "sonServiceName": "子公司公司",
+      "sonServiceLinkPath": "/8"
+    },
+    {
+      "sonServiceName": "外国公司",
+      "sonServiceLinkPath": "/9"
+    }
+  ]
 }
