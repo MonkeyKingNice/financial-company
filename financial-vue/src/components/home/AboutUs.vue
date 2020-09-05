@@ -1,25 +1,26 @@
 <template>
   <div>
-    <article>
-      <h2 class="aboutUs-h2"
-          style="">关于我们</h2>
-      <span class="aboutUs-span">
-        ABOUT US
-      </span>
-    </article>
-
-    <div class="txts">
-      深圳佰税通企业登记代理有限公司创建于2019年，是一家专注于工商财税、一站式企业服务机构，服务涵盖公司注册、公司 变更、记账报税、银行开户、许可资质、网络服务、综合服务等，经过4年的沉淀与发展，建立了云财税服务体系，全网流程对接。
+    <h2>
+      <label>关于我们</label>
+      <span>ABOUT US</span>
+    </h2>
+    <div class="wrap about-text">
+      深圳市佰税通企业管理有限公司是经深圳市财政局批准设立的财税外包服务机构，自成立以来,佰税通始终紧贴市场需求,提升专业能力,致力于为客户提供安全可靠的企业财税整体解决方案
+      <br><br>
+      我们拥有优质的社会资源，专业的服务团队，最先进的操作系统。我们诚信专业、精准高效的服务赢得了客户的认可，在业界享有很好的声誉。我们精炼地掌握着各种行业的财税法律法规，竭诚为客户提供精准化和标准化的服务，竭力满足客户各种层次、各种个性化的需求。专心为客户创造价值增加财富。
+      <br><br>
+      我们的产品有：注册公司、记账报税、税务筹划、工商变更、地址挂靠、银行开户、清算注销、出口退税、政府补贴、资质证明、财税培训、社保代缴、注册商标、代办深户。
+      <!--深圳佰税通企业登记代理有限公司创建于2019年，是一家专注于工商财税、一站式企业服务机构，服务涵盖公司注册、公司 变更、记账报税、银行开户、许可资质、网络服务、综合服务等，经过4年的沉淀与发展，建立了云财税服务体系，全网流程对接。
       <br><br>
       佰税通品牌：深圳佰税通企业登记代理有限公司。
       <br><br>
-      进入2020年，迎来了宝安分公司的成立，完成了极具里程碑意义分部拓展，明确了未来3年的战略目标，每年一个台阶，通过持续和稳健的步伐，将赢态企业 提升到一个崭新的高度和全新的平台。
+      进入2020年，迎来了宝安分公司的成立，完成了极具里程碑意义分部拓展，明确了未来3年的战略目标，每年一个台阶，通过持续和稳健的步伐，将佰税通企业 提升到一个崭新的高度和全新的平台。
       <br><br>
-      时间来到2019年，南山总部已经因为规模太小，董事会毅然将总部迁至宝安，形成一总一分格局，服务于客户，未来赢态将一步一个台阶，覆盖全深圳，拓 展至全国，将赢态企业打造成一个中小型企业孵化器，港湾式平台，为实现十九大而奋斗。
+      时间来到2019年，南山总部已经因为规模太小，董事会毅然将总部迁至宝安，形成一总一分格局，服务于客户，未来佰税通将一步一个台阶，覆盖全深圳，拓 展至全国，将佰税通企业打造成一个中小型企业孵化器，港湾式平台，为实现十九大而奋斗。
       <br><br>
       2020年新年新气象，佰税通企业本着服务客户的理念，继续为企业家服务，从公司成立至公司腾飞一路为您继续服务！
       <br><br>
-      公司地址：深圳市宝安区西乡街道汇潮科技大厦2701-2703
+      公司地址：深圳市宝安区西乡街道汇潮科技大厦2701-2703-->
     </div>
   </div>
 </template>
@@ -44,37 +45,12 @@ export default {
   methods: {}
 }
 </script>
-<style>
-.aboutUs-h2 {
-  font-size: 42px;
-  margin-bottom: 5px;
-  font-family: "华文细黑";
-  letter-spacing: 1px;
-  font-weight: normal;
-  color: #171717;
-}
-.aboutUs-span {
-  color: #004098;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-family: Arial;
-}
-.txts {
-  margin-top: 3%;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 15px;
-  overflow: hidden;
+<style scoped>
+.about-text {
+  text-align: left;
   line-height: 1.65;
   color: #666666;
   font-size: 16px;
-  border: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  text-align: left;
-  font-family: "微软雅黑", "Arial", "Microsoft YaHei", "Helvetica Neue",
-    "Helvetica", "Arial", "sans-serif";
+  margin-bottom: 5%;
 }
 </style>

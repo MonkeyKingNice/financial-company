@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from './assets/http_config/http'
+import '@/assets/style/main.css' // 样式
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false

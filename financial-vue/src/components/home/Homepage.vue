@@ -10,7 +10,7 @@ export default {
   name: 'HomePage',
   data () {
     return {
-      homePageImg: '../../../../static/images/home_page_imgs/homePage.jpg'
+      homePageImg: '../../../../static/images/banner.png'
     }
   },
 
@@ -29,5 +29,6 @@ export default {
   height: auto;
   max-width: 100%;
   max-height: 100%;
+  margin-top: 90px;
 }
 </style>
